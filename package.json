@@ -8,7 +8,6 @@
     "start": "node index.js",
     "app_debug": "electron ele_app.js",
     "build_win": "electron-builder --windows portable",
-    "build_mac-intel": "electron-builder --mac dmg",
     "build_linux-snap": "electron-builder --linux snap",
     "build_linux-apk": "electron-builder --linux apk"
   },

@@ -18,8 +18,17 @@ CSV to SQL Table程式碼保存在GitHub中，以MIT條款授權，可任意使�
 - WEB環境
   * Service: Nodejs+Express
   * Port: 8087
+- Electron App 支援
+  * 工具: electron-builder
 
 ## 02 如何開始建置
-```bash
-$sudo make
-```
+- Docker Container
+  ```bash
+  $ sudo make
+  ```
+- Electron App
+  * linux
+    * snap: `electron-builder --linux snap`
+    * apk: `electron-builder --linux apk`
+  * windows: `electron-builder --windows portable`
+  * debug: `electron ele_app.js`
