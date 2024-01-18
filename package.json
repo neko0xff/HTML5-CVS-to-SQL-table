@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "app_debug": "electron ele_app.js",
+    "build_win": "electron-builder --windows portable",
+    "build_mac-intel": "electron-builder --mac dmg",
+    "build_linux-snap": "electron-builder --linux snap",
+    "build_linux-apk": "electron-builder --linux apk"
   },
   "repository": {
     "type": "git",
@@ -25,5 +30,9 @@
     "express-rate-limit": "^7.1.5",
     "helmet": "^7.1.0",
     "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "electron": "^28.1.4",
+    "electron-builder": "^24.9.1"
   }
 }
